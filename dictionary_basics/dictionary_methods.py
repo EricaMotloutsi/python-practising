@@ -64,3 +64,17 @@ print(last_item,data)
 data = {'name':'Alice', 'age':30, 'city':'New York'}
 del data['city']
 print(data)
+
+#Iterate over keys, values, and items
+#Iterate over keys
+for key in base_config:
+    print(f'Key:{key}')
+
+#Iterate over values
+for value in base_config.values():
+    print(f'Value:{value}')
+
+#Iterate over keys and values
+for key, value in base_config.items():
+    print(f'{key}=>{value}')
+    
