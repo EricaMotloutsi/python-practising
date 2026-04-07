@@ -41,3 +41,26 @@ for value in base_config.values():
 #iterate over keys and values
 for key, value in base_config.items():
     print(f'{key} => {value}')
+
+#Setting Operations with Dictionary Keys and Items
+config_a = {'batch_size':32, 'optimizer':'adam'}
+config_b= {'batch_size':64, 'optimizer':'adam', 'momentum':0.9}
+
+#dict.pop(key)
+data = {'name':'Alice', 'age':30, 'city':'New York'}
+age = data.pop('age')
+print(age,data)
+
+country = data.pop('country', 'Not found')
+print(country)
+
+#dict.popitem()
+data = {'name':'Alice', 'age':30, 'city':'New York'}
+
+last_item = data.popitem()
+print(last_item,data)
+
+#del dict[key]
+data = {'name':'Alice', 'age':30, 'city':'New York'}
+del data['city']
+print(data)
