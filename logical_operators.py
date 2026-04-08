@@ -29,4 +29,21 @@ if not (age>=18 or has_parental_consent):
     print('Youu cannot sign up without parental consent')
 else:
     print('You are allowed to sign up.')
+
+
+#short circurt evaluation
+temperature= 15
+is_sunny = False
+if temperature > 25 and is_sunny:
+    print('Perfect day for the beach!')
+else:
+    print('Maybe another day for the beach!')
+
+
+email = 'user@example.com'
+phone_number= ''
+if email or phone_number:
+    print('Thank you for providing your contact information!')
+else:
+    print(' Please provide either a phone number or an email address to continue.')
     
